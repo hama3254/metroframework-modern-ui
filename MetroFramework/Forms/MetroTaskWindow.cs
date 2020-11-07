@@ -149,26 +149,26 @@ namespace MetroFramework.Forms
 
                 Size = new Size(400, 200);
 
-                Taskbar myTaskbar = new Taskbar();
-                switch (myTaskbar.Position)
-                {
-                    case TaskbarPosition.Left:
-                        Location = new Point(myTaskbar.Bounds.Width + 5, myTaskbar.Bounds.Height - Height - 5);
-                        break;
-                    case TaskbarPosition.Top:
-                        Location = new Point(myTaskbar.Bounds.Width - Width - 5, myTaskbar.Bounds.Height + 5);
-                        break;
-                    case TaskbarPosition.Right:
-                        Location = new Point(myTaskbar.Bounds.X - Width - 5, myTaskbar.Bounds.Height - Height - 5);
-                        break;
-                    case TaskbarPosition.Bottom:
-                        Location = new Point(myTaskbar.Bounds.Width - Width - 5, myTaskbar.Bounds.Y - Height - 5);
-                        break;
-                    case TaskbarPosition.Unknown:
-                    default:
-                        Location = new Point(Screen.PrimaryScreen.Bounds.Width - Width - 5, Screen.PrimaryScreen.Bounds.Height - Height - 5);
-                        break;
-                }
+                //Taskbar myTaskbar = new Taskbar();
+                //switch (myTaskbar.Position)
+                //{
+                //    case TaskbarPosition.Left:
+                //        Location = new Point(myTaskbar.Bounds.Width + 5, myTaskbar.Bounds.Height - Height - 5);
+                //        break;
+                //    case TaskbarPosition.Top:
+                //        Location = new Point(myTaskbar.Bounds.Width - Width - 5, myTaskbar.Bounds.Height + 5);
+                //        break;
+                //    case TaskbarPosition.Right:
+                //        Location = new Point(myTaskbar.Bounds.X - Width - 5, myTaskbar.Bounds.Height - Height - 5);
+                //        break;
+                //    case TaskbarPosition.Bottom:
+                //        Location = new Point(myTaskbar.Bounds.Width - Width - 5, myTaskbar.Bounds.Y - Height - 5);
+                //        break;
+                //    case TaskbarPosition.Unknown:
+                //    default:
+                //        Location = new Point(Screen.PrimaryScreen.Bounds.Width - Width - 5, Screen.PrimaryScreen.Bounds.Height - Height - 5);
+                //        break;
+                //}
 
                 controlContainer.Location = new Point(0, 60);
                 controlContainer.Size = new Size(Width - 40, Height - 80);
@@ -224,6 +224,18 @@ namespace MetroFramework.Forms
 
             if (!cancelTimer)
                 timer.Reset();
+        }
+
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // MetroTaskWindow
+            // 
+            this.ClientSize = new System.Drawing.Size(339, 300);
+            this.Name = "MetroTaskWindow";
+            this.ResumeLayout(false);
+
         }
     }
 }

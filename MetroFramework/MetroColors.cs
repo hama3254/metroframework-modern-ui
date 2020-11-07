@@ -87,7 +87,7 @@ namespace MetroFramework
         {
             get
             {
-                return Color.FromArgb(243, 119, 53);
+                return Color.FromArgb(255, 128, 0);
             }
         }
 
@@ -138,6 +138,8 @@ namespace MetroFramework
                 return Color.FromArgb(255, 196, 37);
             }
         }
+
+      
 
         static Color _custom = Color.FromArgb(225, 195, 143);
 

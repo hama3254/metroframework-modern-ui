@@ -223,7 +223,7 @@ namespace MetroFramework.Forms
             }
         }
 
-        private const int borderWidth = 5;
+        private const int borderWidth = 0; //changed 5
 
         private Bitmap _image = null;
         private Image backImage;
@@ -708,34 +708,34 @@ namespace MetroFramework.Forms
             if (windowButtonList.ContainsKey(button))
                 return;
 
-            MetroFormButton newButton = new MetroFormButton();
+            //MetroFormButton newButton = new MetroFormButton();
 
-            if (button == WindowButtons.Close)
-            {
-                newButton.Text = "r";
-            }
-            else if (button == WindowButtons.Minimize)
-            {
-                newButton.Text = "0";
-            }
-            else if (button == WindowButtons.Maximize)
-            {
-                if (WindowState == FormWindowState.Normal)
-                    newButton.Text = "1";
-                else
-                    newButton.Text = "2";
-            }
+            //if (button == WindowButtons.Close)
+            //{
+            //    newButton.Text = "r";
+            //}
+            //else if (button == WindowButtons.Minimize)
+            //{
+            //    newButton.Text = "0";
+            //}
+            //else if (button == WindowButtons.Maximize)
+            //{
+            //    if (WindowState == FormWindowState.Normal)
+            //        newButton.Text = "1";
+            //    else
+            //        newButton.Text = "2";
+            //}
 
-            newButton.Style = Style;
-            newButton.Theme = Theme;
-            newButton.Tag = button;
-            newButton.Size = new Size(25, 20);
-            newButton.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            newButton.TabStop = false; //remove the form controls from the tab stop
-            newButton.Click += WindowButton_Click;
-            Controls.Add(newButton);
+            //newButton.Style = Style;
+            //newButton.Theme = Theme;
+            //newButton.Tag = button;
+            //newButton.Size = new Size(25, 20);
+            //newButton.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            //newButton.TabStop = false; //remove the form controls from the tab stop
+            //newButton.Click += WindowButton_Click;
+            //Controls.Add(newButton);
 
-            windowButtonList.Add(button, newButton);
+            //windowButtonList.Add(button, newButton);
         }
 
         private void WindowButton_Click(object sender, EventArgs e)
@@ -1592,5 +1592,18 @@ namespace MetroFramework.Forms
         }
 
         #endregion
+
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // MetroForm
+            // 
+            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "MetroForm";
+            this.ResumeLayout(false);
+
+        }
     }
 }

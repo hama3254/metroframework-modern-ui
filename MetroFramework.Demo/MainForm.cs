@@ -17,22 +17,22 @@ namespace MetroFramework.Demo
             this.BorderStyle = MetroFormBorderStyle.FixedSingle;
             this.ShadowType = MetroFormShadowType.AeroShadow;
 
-            DataTable _table = new DataTable();
-            _table.ReadXml(Application.StartupPath + @"\Data\Books.xml");
-            metroGrid1.DataSource = _table;
+            //DataTable _table = new DataTable();
+            //_table.ReadXml(Application.StartupPath + @"\Data\Books.xml");
+            //metroGrid1.DataSource = _table;
 
-            metroGrid1.Font = new Font("Segoe UI", 11f, FontStyle.Regular, GraphicsUnit.Pixel);
-            metroGrid1.AllowUserToAddRows = false;
+            //metroGrid1.Font = new Font("Segoe UI", 11f, FontStyle.Regular, GraphicsUnit.Pixel);
+            //metroGrid1.AllowUserToAddRows = false;
 
-            this.metroComboBox4.DataSource = _table;
-            metroComboBox4.ValueMember = "Id";
-            metroComboBox4.DisplayMember = "title";
+            //this.metroComboBox4.DataSource = _table;
+            //metroComboBox4.ValueMember = "Id";
+            //metroComboBox4.DisplayMember = "title";
         }
 
         private void metroTileSwitch_Click(object sender, EventArgs e)
         {
             var m = new Random();
-            int next = m.Next(0, 13);
+            int next= m.Next(0, 13);
             metroStyleManager.Style = (MetroColorStyle)next;
         }
 
@@ -93,7 +93,7 @@ namespace MetroFramework.Demo
 
         private void metroButton4_Click(object sender, EventArgs e)
         {
-            metroTextBox2.Focus();
+            //metroTextBox2.Focus();
         } 
     }
 }
