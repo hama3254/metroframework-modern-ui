@@ -1,0 +1,13 @@
+E:\ui\metroframework-modern-ui-master\MetroFramework\bin\x86\Debug\MetroFramework.dll
+E:\ui\metroframework-modern-ui-master\MetroFramework\bin\x86\Debug\MetroFramework.pdb
+E:\ui\metroframework-modern-ui-master\MetroFramework\obj\x86\Debug\MetroFramework.Controls.MetroGrid.resources
+E:\ui\metroframework-modern-ui-master\MetroFramework\obj\x86\Debug\MetroFramework.Controls.MetroTextBox.resources
+E:\ui\metroframework-modern-ui-master\MetroFramework\obj\x86\Debug\MetroFramework.Forms.MetroTaskWindow.resources
+E:\ui\metroframework-modern-ui-master\MetroFramework\obj\x86\Debug\MetroFramework.MetroMessageBoxControl.resources
+E:\ui\metroframework-modern-ui-master\MetroFramework\obj\x86\Debug\MetroFramework.Properties.Resources.resources
+E:\ui\metroframework-modern-ui-master\MetroFramework\obj\x86\Debug\MetroFramework.csproj.GenerateResource.cache
+E:\ui\metroframework-modern-ui-master\MetroFramework\obj\x86\Debug\MetroFramework.csproj.CoreCompileInputs.cache
+E:\ui\metroframework-modern-ui-master\MetroFramework\obj\x86\Debug\MetroFramework.dll
+E:\ui\metroframework-modern-ui-master\MetroFramework\obj\x86\Debug\MetroFramework.pdb
+E:\ui\metroframework-modern-ui-master\MetroFramework\obj\x86\Debug\MetroFramework.Forms.MetroForm.resources
+E:\ui\metroframework-modern-ui-master\MetroFramework\obj\x86\Debug\MetroFramework.csprojAssemblyReference.cache

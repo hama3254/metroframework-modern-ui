@@ -273,7 +273,7 @@ namespace MetroFramework.Demo
             // metroLabel21
             // 
             this.metroLabel21.AutoSize = true;
-            this.metroLabel21.Location = new System.Drawing.Point(496, 136);
+            this.metroLabel21.Location = new System.Drawing.Point(496, 131);
             this.metroLabel21.Name = "metroLabel21";
             this.metroLabel21.Size = new System.Drawing.Size(117, 19);
             this.metroLabel21.TabIndex = 19;
@@ -512,7 +512,7 @@ namespace MetroFramework.Demo
             // 
             this.metroDateTime2.Enabled = false;
             this.metroDateTime2.Location = new System.Drawing.Point(201, 87);
-            this.metroDateTime2.MinimumSize = new System.Drawing.Size(0, 29);
+            this.metroDateTime2.MinimumSize = new System.Drawing.Size(4, 29);
             this.metroDateTime2.Name = "metroDateTime2";
             this.metroDateTime2.Size = new System.Drawing.Size(213, 29);
             this.metroDateTime2.TabIndex = 20;
@@ -529,7 +529,7 @@ namespace MetroFramework.Demo
             // metroDateTime1
             // 
             this.metroDateTime1.Location = new System.Drawing.Point(201, 51);
-            this.metroDateTime1.MinimumSize = new System.Drawing.Size(0, 29);
+            this.metroDateTime1.MinimumSize = new System.Drawing.Size(4, 29);
             this.metroDateTime1.Name = "metroDateTime1";
             this.metroDateTime1.Size = new System.Drawing.Size(213, 29);
             this.metroDateTime1.TabIndex = 18;
@@ -875,6 +875,8 @@ namespace MetroFramework.Demo
             this.Style = MetroFramework.MetroColorStyle.Orange;
             this.StyleManager = this.metroStyleManager;
             this.Text = "metro framework";
+            this.TextAlign = MetroFramework.Forms.MetroFormTextAlign.Center;
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.metroTabControl1.ResumeLayout(false);
             this.metroTabPage1.ResumeLayout(false);
             this.metroTabPage1.PerformLayout();

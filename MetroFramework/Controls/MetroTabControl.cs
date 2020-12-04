@@ -51,7 +51,7 @@ namespace MetroFramework.Controls
     #region MetroTabPageCollection
 
     [ToolboxItem(false)]
-    [Editor("MetroFramework.Design.MetroTabPageCollectionEditor, " + AssemblyRef.MetroFrameworkDesignSN, typeof(UITypeEditor))]
+    [Editor("MetroFramework.Controls.MetroTabPageCollectionEditor, " + AssemblyRef.MetroFrameworkDesignSN, typeof(UITypeEditor))]
     public class MetroTabPageCollection : TabControl.TabPageCollection
     {
         public MetroTabPageCollection(MetroTabControl owner)
@@ -79,7 +79,7 @@ namespace MetroFramework.Controls
     }
     #endregion HiddenTabClass
 
-    [Designer("MetroFramework.Design.Controls.MetroTabControlDesigner, " + AssemblyRef.MetroFrameworkDesignSN)]
+    [Designer("MetroFramework.Controls.MetroTabControlDesigner, " + AssemblyRef.MetroFrameworkDesignSN)]
     [ToolboxBitmap(typeof(TabControl))]
     public class MetroTabControl : TabControl, IMetroControl
     {
@@ -257,7 +257,7 @@ namespace MetroFramework.Controls
             }
         }
 
-        [Editor("MetroFramework.Design.MetroTabPageCollectionEditor, " + AssemblyRef.MetroFrameworkDesignSN, typeof(UITypeEditor))]
+        [Editor("MetroFramework.Controls.MetroTabPageCollectionEditor, " + AssemblyRef.MetroFrameworkDesignSN, typeof(UITypeEditor))]
         public new TabPageCollection TabPages
         {
             get

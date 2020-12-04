@@ -33,7 +33,7 @@ using MetroFramework.Interfaces;
 
 namespace MetroFramework.Controls
 {
-    [Designer("MetroFramework.Design.Controls.MetroRadioButtonDesigner, " + AssemblyRef.MetroFrameworkDesignSN)]
+    [Designer("MetroFramework.Controls.MetroRadioButtonDesigner, " + AssemblyRef.MetroFrameworkDesignSN)]
     [ToolboxBitmap(typeof(RadioButton))]
     public class MetroRadioButton : RadioButton, IMetroControl
     {

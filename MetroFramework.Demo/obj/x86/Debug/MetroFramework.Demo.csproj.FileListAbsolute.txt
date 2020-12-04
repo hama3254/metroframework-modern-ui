@@ -1,0 +1,16 @@
+E:\ui\metroframework-modern-ui-master\MetroFramework.Demo\obj\x86\Debug\MetroFramework.Demo.csprojAssemblyReference.cache
+E:\ui\metroframework-modern-ui-master\MetroFramework.Demo\obj\x86\Debug\MetroFramework.Demo.MainForm.resources
+E:\ui\metroframework-modern-ui-master\MetroFramework.Demo\obj\x86\Debug\MetroFramework.Demo.Properties.Resources.resources
+E:\ui\metroframework-modern-ui-master\MetroFramework.Demo\obj\x86\Debug\MetroFramework.Demo.TaskWindowControl.resources
+E:\ui\metroframework-modern-ui-master\MetroFramework.Demo\obj\x86\Debug\MetroFramework.Demo.csproj.GenerateResource.cache
+E:\ui\metroframework-modern-ui-master\MetroFramework.Demo\obj\x86\Debug\MetroFramework.Demo.csproj.CoreCompileInputs.cache
+E:\ui\metroframework-modern-ui-master\MetroFramework.Demo\bin\x86\Debug\Data\Books.xml
+E:\ui\metroframework-modern-ui-master\MetroFramework.Demo\bin\x86\Debug\MetroFramework.Demo.exe.config
+E:\ui\metroframework-modern-ui-master\MetroFramework.Demo\bin\x86\Debug\MetroFramework.Demo.exe
+E:\ui\metroframework-modern-ui-master\MetroFramework.Demo\bin\x86\Debug\MetroFramework.Demo.pdb
+E:\ui\metroframework-modern-ui-master\MetroFramework.Demo\bin\x86\Debug\MetroFramework.dll
+E:\ui\metroframework-modern-ui-master\MetroFramework.Demo\bin\x86\Debug\MetroFramework.pdb
+E:\ui\metroframework-modern-ui-master\MetroFramework.Demo\obj\x86\Debug\MetroFramework.Demo.csproj.CopyComplete
+E:\ui\metroframework-modern-ui-master\MetroFramework.Demo\obj\x86\Debug\MetroFramework.Demo.exe
+E:\ui\metroframework-modern-ui-master\MetroFramework.Demo\obj\x86\Debug\MetroFramework.Demo.pdb
+E:\ui\metroframework-modern-ui-master\MetroFramework.Demo\obj\x86\Debug\MetroFramework.Demo.Form1.resources

@@ -750,6 +750,12 @@ namespace MetroFramework.Drawing
                 case MetroColorStyle.Yellow:
                     return MetroColors.Yellow;
 
+                case MetroColorStyle.DarkPurple:
+                    return MetroColors.DarkPurple;
+
+                case MetroColorStyle.LightGreen:
+                    return MetroColors.LightGreen;
+
                 default:
                     return MetroColors.Blue;
             }

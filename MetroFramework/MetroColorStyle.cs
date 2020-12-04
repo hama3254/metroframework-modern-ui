@@ -31,6 +31,8 @@ namespace MetroFramework
         Silver,
         Blue,
         Green,
+        LightGreen,
+        DarkPurple,
         Lime,
         Teal,
         Orange,

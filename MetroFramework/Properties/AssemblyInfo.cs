@@ -61,12 +61,12 @@ namespace MetroFramework
 
         // Design
 
-        internal const string MetroFrameworkDesign_ = "MetroFramework.Design";
+        internal const string MetroFrameworkDesign_ = "MetroFramework";
 
-        internal const string MetroFrameworkDesignSN = "MetroFramework.Design, Version=" + MetroFrameworkAssembly.Version
+        internal const string MetroFrameworkDesignSN = "MetroFramework, Version=" + MetroFrameworkAssembly.Version
                                                        + ", Culture=neutral, PublicKeyToken=" + MetroFrameworkKeyToken;
 
-        internal const string MetroFrameworkDesignIVT = "MetroFramework.Design, PublicKey=" + MetroFrameworkKeyFull;
+        internal const string MetroFrameworkDesignIVT = "MetroFramework, PublicKey=" + MetroFrameworkKeyFull;
 
         // Fonts
 

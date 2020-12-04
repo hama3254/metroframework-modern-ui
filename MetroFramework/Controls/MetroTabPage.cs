@@ -36,7 +36,7 @@ using MetroFramework.Native;
 namespace MetroFramework.Controls
 {
     [ToolboxItem(false)]
-    [Designer("MetroFramework.Design.Controls.MetroTabPageDesigner, " + AssemblyRef.MetroFrameworkDesignSN)]
+    [Designer("MetroFramework.Controls.MetroTabPageDesigner, " + AssemblyRef.MetroFrameworkDesignSN)]
     public class MetroTabPage : TabPage, IMetroControl
     {
         #region Interface

@@ -184,7 +184,7 @@ namespace MetroFramework.Forms
             }
         }
 
-        private bool isResizable = true;
+        private bool isResizable = false;
         [Category(MetroDefaults.PropertyCategory.Appearance)]
         public bool Resizable
         {
@@ -502,7 +502,7 @@ namespace MetroFramework.Forms
                 UpdateWindowButtonPosition();
             }
 
-            CreateShadow();
+            //CreateShadow();
         }
 
         protected override void OnActivated(EventArgs e)

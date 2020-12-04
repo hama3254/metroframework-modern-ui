@@ -66,7 +66,20 @@ namespace MetroFramework
                 return Color.FromArgb(0, 177, 89);
             }
         }
-
+        public static Color LightGreen
+        {
+            get
+            {
+                return Color.FromArgb(170, 190, 60);
+            }
+        }
+        public static Color DarkPurple
+        {
+            get
+            {
+                return Color.FromArgb(60, 0, 150);
+            }
+        }
         public static Color Lime
         {
             get

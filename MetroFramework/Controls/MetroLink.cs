@@ -33,7 +33,7 @@ using System.Drawing.Imaging;
 
 namespace MetroFramework.Controls
 {
-    [Designer("MetroFramework.Design.Controls.MetroLinkDesigner, " + AssemblyRef.MetroFrameworkDesignSN)]
+    [Designer("MetroFramework.Controls.MetroLinkDesigner, " + AssemblyRef.MetroFrameworkDesignSN)]
     [ToolboxBitmap(typeof(LinkLabel))]
     [DefaultEvent("Click")]
     public class MetroLink : Button, IMetroControl

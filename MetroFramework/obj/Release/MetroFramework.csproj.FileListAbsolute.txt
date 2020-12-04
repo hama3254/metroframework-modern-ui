@@ -1,0 +1,9 @@
+E:\ui\metroframework-modern-ui-master\MetroFramework\bin\Release\MetroFramework.dll
+E:\ui\metroframework-modern-ui-master\MetroFramework\obj\Release\MetroFramework.csprojAssemblyReference.cache
+E:\ui\metroframework-modern-ui-master\MetroFramework\obj\Release\MetroFramework.Controls.MetroGrid.resources
+E:\ui\metroframework-modern-ui-master\MetroFramework\obj\Release\MetroFramework.Controls.MetroTextBox.resources
+E:\ui\metroframework-modern-ui-master\MetroFramework\obj\Release\MetroFramework.MetroMessageBoxControl.resources
+E:\ui\metroframework-modern-ui-master\MetroFramework\obj\Release\MetroFramework.Properties.Resources.resources
+E:\ui\metroframework-modern-ui-master\MetroFramework\obj\Release\MetroFramework.csproj.GenerateResource.cache
+E:\ui\metroframework-modern-ui-master\MetroFramework\obj\Release\MetroFramework.csproj.CoreCompileInputs.cache
+E:\ui\metroframework-modern-ui-master\MetroFramework\obj\Release\MetroFramework.dll

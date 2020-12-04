@@ -49,6 +49,7 @@ namespace MetroFramework.Demo
         private void metroButton2_Click(object sender, EventArgs e)
         {
             MetroMessageBox.Show(this, "Do you like this metro message box?", "Metro Title", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Asterisk);
+          
         }
 
         private void metroButton5_Click(object sender, EventArgs e)
@@ -94,6 +95,11 @@ namespace MetroFramework.Demo
         private void metroButton4_Click(object sender, EventArgs e)
         {
             //metroTextBox2.Focus();
-        } 
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

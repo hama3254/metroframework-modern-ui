@@ -31,7 +31,7 @@ using System.Reflection;
 
 namespace MetroFramework.Components
 {
-    [Designer("MetroFramework.Design.Components.MetroStyleManagerDesigner, " + AssemblyRef.MetroFrameworkDesignSN)]
+    [Designer("MetroFramework.Components.MetroStyleManagerDesigner, " + AssemblyRef.MetroFrameworkDesignSN)]
     public sealed class MetroStyleManager : Component, ICloneable, ISupportInitialize
     {
         #region Fields

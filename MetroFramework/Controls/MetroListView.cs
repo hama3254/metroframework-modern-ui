@@ -595,21 +595,21 @@ namespace MetroFramework.Controls
 
                 using (StringFormat sf = new StringFormat())
                 {
-                    TextFormatFlags flags = TextFormatFlags.Left;
+                    //TextFormatFlags flags = TextFormatFlags.Left;
 
                     switch (e.Header.TextAlign)
                     {
                         case HorizontalAlignment.Center:
                             sf.Alignment = StringAlignment.Center;
-                            flags = TextFormatFlags.HorizontalCenter;
+                            //flags = TextFormatFlags.HorizontalCenter;
                             break;
                         case HorizontalAlignment.Right:
                             sf.Alignment = StringAlignment.Far;
-                            flags = TextFormatFlags.Right;
+                            //flags = TextFormatFlags.Right;
                             break;
                         default:
                             sf.Alignment = StringAlignment.Near;
-                            flags = TextFormatFlags.Left;
+                            //flags = TextFormatFlags.Left;
                             break;
                     }
 
@@ -617,11 +617,11 @@ namespace MetroFramework.Controls
                     if (e.ColumnIndex > 0 && Double.TryParse(e.SubItem.Text, NumberStyles.Currency, NumberFormatInfo.CurrentInfo, out subItemValue))
                     {
                         sf.Alignment = StringAlignment.Far;
-                        flags = TextFormatFlags.Right;
+                        //flags = TextFormatFlags.Right;
                     }
 
 
-                    //TextFormatFlags align = TextFormatFlags.Left;
+                   //TextFormatFlags align = TextFormatFlags.Left;
                     Rectangle rect = new Rectangle(e.Bounds.X + _left, e.Bounds.Y, _colWidth - _ded, e.Item.Bounds.Height);
                     TextRenderer.DrawText(e.Graphics, e.SubItem.Text, stdFont, rect, itemForeColor, align | TextFormatFlags.SingleLine | TextFormatFlags.GlyphOverhangPadding | TextFormatFlags.VerticalCenter | TextFormatFlags.WordEllipsis);
                 }
@@ -820,7 +820,7 @@ public class ListViewColumnSorter : IComparer
     private CaseInsensitiveComparer ObjectCompare;
 
     private SortModifiers mySortModifier = SortModifiers.SortByText;
-    public SortModifiers _SortModifier
+    public SortModifiers SortModifier
     {
         set
         {
