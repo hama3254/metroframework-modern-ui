@@ -11,3 +11,16 @@ E:\ui\metroframework-modern-ui-master\MetroFramework\obj\x86\Debug\MetroFramewor
 E:\ui\metroframework-modern-ui-master\MetroFramework\obj\x86\Debug\MetroFramework.pdb
 E:\ui\metroframework-modern-ui-master\MetroFramework\obj\x86\Debug\MetroFramework.Forms.MetroForm.resources
 E:\ui\metroframework-modern-ui-master\MetroFramework\obj\x86\Debug\MetroFramework.csprojAssemblyReference.cache
+D:\Projecte\Crunchyroll Downloader - v3.0-final\metroframework-modern-ui\MetroFramework\bin\x86\Debug\MetroFramework.dll
+D:\Projecte\Crunchyroll Downloader - v3.0-final\metroframework-modern-ui\MetroFramework\bin\x86\Debug\MetroFramework.pdb
+D:\Projecte\Crunchyroll Downloader - v3.0-final\metroframework-modern-ui\MetroFramework\obj\x86\Debug\MetroFramework.csprojAssemblyReference.cache
+D:\Projecte\Crunchyroll Downloader - v3.0-final\metroframework-modern-ui\MetroFramework\obj\x86\Debug\MetroFramework.Controls.MetroGrid.resources
+D:\Projecte\Crunchyroll Downloader - v3.0-final\metroframework-modern-ui\MetroFramework\obj\x86\Debug\MetroFramework.Controls.MetroTextBox.resources
+D:\Projecte\Crunchyroll Downloader - v3.0-final\metroframework-modern-ui\MetroFramework\obj\x86\Debug\MetroFramework.Forms.MetroForm.resources
+D:\Projecte\Crunchyroll Downloader - v3.0-final\metroframework-modern-ui\MetroFramework\obj\x86\Debug\MetroFramework.Forms.MetroTaskWindow.resources
+D:\Projecte\Crunchyroll Downloader - v3.0-final\metroframework-modern-ui\MetroFramework\obj\x86\Debug\MetroFramework.MetroMessageBoxControl.resources
+D:\Projecte\Crunchyroll Downloader - v3.0-final\metroframework-modern-ui\MetroFramework\obj\x86\Debug\MetroFramework.Properties.Resources.resources
+D:\Projecte\Crunchyroll Downloader - v3.0-final\metroframework-modern-ui\MetroFramework\obj\x86\Debug\MetroFramework.csproj.GenerateResource.cache
+D:\Projecte\Crunchyroll Downloader - v3.0-final\metroframework-modern-ui\MetroFramework\obj\x86\Debug\MetroFramework.csproj.CoreCompileInputs.cache
+D:\Projecte\Crunchyroll Downloader - v3.0-final\metroframework-modern-ui\MetroFramework\obj\x86\Debug\MetroFramework.dll
+D:\Projecte\Crunchyroll Downloader - v3.0-final\metroframework-modern-ui\MetroFramework\obj\x86\Debug\MetroFramework.pdb

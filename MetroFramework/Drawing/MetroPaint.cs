@@ -807,6 +807,12 @@ namespace MetroFramework.Drawing
                 case MetroColorStyle.Yellow:
                     return MetroBrushes.Yellow;
 
+                case MetroColorStyle.DarkPurple:
+                    return MetroBrushes.DarkPurple;
+
+                case MetroColorStyle.LightGreen:
+                    return MetroBrushes.LightGreen;
+
                 default:
                     return MetroBrushes.Blue;
             }
@@ -857,6 +863,12 @@ namespace MetroFramework.Drawing
 
                 case MetroColorStyle.Yellow:
                     return MetroPens.Yellow;
+
+                case MetroColorStyle.DarkPurple:
+                    return MetroPens.DarkPurple;
+
+                case MetroColorStyle.LightGreen:
+                    return MetroPens.LightGreen;
 
                 default:
                     return MetroPens.Blue;

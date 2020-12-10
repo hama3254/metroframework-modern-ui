@@ -80,6 +80,14 @@ namespace MetroFramework
             }
         }
 
+        public static SolidBrush LightGreen
+        {
+            get
+            {
+                return GetSaveBrush("Green", MetroColors.LightGreen);
+            }
+        }
+
         public static SolidBrush Lime
         {
             get
@@ -133,6 +141,13 @@ namespace MetroFramework
             get
             {
                 return GetSaveBrush("Purple", MetroColors.Purple);
+            }
+        }
+        public static SolidBrush DarkPurple
+        {
+            get
+            {
+                return GetSaveBrush("Purple", MetroColors.DarkPurple);
             }
         }
 

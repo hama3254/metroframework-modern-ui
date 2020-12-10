@@ -99,6 +99,7 @@ namespace MetroFramework.Demo
             this.metroStyleManager = new MetroFramework.Components.MetroStyleManager(this.components);
             this.metroToolTip = new MetroFramework.Components.MetroToolTip();
             this.metroStyleExtender = new MetroFramework.Components.MetroStyleExtender(this.components);
+            this.metroComboBox2 = new MetroFramework.Controls.MetroComboBox();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.metroContextMenu1.SuspendLayout();
@@ -173,6 +174,7 @@ namespace MetroFramework.Demo
             this.metroDropDownButton1.TabIndex = 24;
             this.metroDropDownButton1.Text = "DropDownButton";
             this.metroDropDownButton1.UseSelectable = true;
+            this.metroDropDownButton1.Click += new System.EventHandler(this.metroDropDownButton1_Click);
             // 
             // metroContextMenu1
             // 
@@ -860,6 +862,19 @@ namespace MetroFramework.Demo
             this.metroToolTip.StyleManager = null;
             this.metroToolTip.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
+            // metroComboBox2
+            // 
+            this.metroComboBox2.FormattingEnabled = true;
+            this.metroComboBox2.ItemHeight = 23;
+            this.metroComboBox2.Items.AddRange(new object[] {
+            "test",
+            "test3"});
+            this.metroComboBox2.Location = new System.Drawing.Point(501, 25);
+            this.metroComboBox2.Name = "metroComboBox2";
+            this.metroComboBox2.Size = new System.Drawing.Size(121, 29);
+            this.metroComboBox2.TabIndex = 1;
+            this.metroComboBox2.UseSelectable = true;
+            // 
             // MainForm
             // 
             this.ApplyImageInvert = true;
@@ -869,10 +884,10 @@ namespace MetroFramework.Demo
             this.BackImagePadding = new System.Windows.Forms.Padding(210, 10, 0, 0);
             this.BackMaxSize = 50;
             this.ClientSize = new System.Drawing.Size(720, 382);
+            this.Controls.Add(this.metroComboBox2);
             this.Controls.Add(this.metroTabControl1);
             this.Name = "MainForm";
             this.ShadowType = MetroFramework.Forms.MetroFormShadowType.None;
-            this.Style = MetroFramework.MetroColorStyle.Orange;
             this.StyleManager = this.metroStyleManager;
             this.Text = "metro framework";
             this.TextAlign = MetroFramework.Forms.MetroFormTextAlign.Center;
@@ -958,6 +973,7 @@ namespace MetroFramework.Demo
         private Controls.MetroRadioButton metroRadioButton6;
         private Controls.MetroCheckBox metroCheckBox6;
         private Controls.MetroDropDownButton metroDropDownButton1;
+        private Controls.MetroComboBox metroComboBox2;
     }
 }
 

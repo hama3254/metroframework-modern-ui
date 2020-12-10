@@ -79,6 +79,13 @@ namespace MetroFramework
                 return GetSavePen("Green", MetroColors.Green);
             }
         }
+        public static Pen LightGreen
+        {
+            get
+            {
+                return GetSavePen("Green", MetroColors.LightGreen);
+            }
+        }
 
         public static Pen Lime
         {
@@ -135,7 +142,13 @@ namespace MetroFramework
                 return GetSavePen("Purple", MetroColors.Purple);
             }
         }
-
+        public static Pen DarkPurple
+        {
+            get
+            {
+                return GetSavePen("Purple", MetroColors.DarkPurple);
+            }
+        }
         public static Pen Red
         {
             get

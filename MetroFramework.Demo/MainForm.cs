@@ -101,5 +101,10 @@ namespace MetroFramework.Demo
         {
            
         }
+
+        private void metroDropDownButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

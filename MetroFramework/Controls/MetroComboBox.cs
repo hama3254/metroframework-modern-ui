@@ -346,7 +346,7 @@ namespace MetroFramework.Controls
             textBox.TabIndex = 0;
             textBox.Margin = new Padding(0);
             textBox.Padding = new Padding(0);
-            textBox.TextAlign = HorizontalAlignment.Left;
+            textBox.TextAlign = HorizontalAlignment.Center;
             textBox.Resize += TextBox_Resize;
             textBox.TextChanged +=  TextBox_TextChanged;
             textBox.UseSelectable = true;
@@ -485,16 +485,16 @@ namespace MetroFramework.Controls
             if (DropDownStyle != ComboBoxStyle.Simple)
             {
                 using (SolidBrush b = new SolidBrush(foreColor))
-                {
+                {                                                           
                     e.Graphics.FillPolygon(b, new Point[] { new Point(Width - 20, (Height / 2) - 2), new Point(Width - 9, (Height / 2) - 2), new Point(Width - 15, (Height / 2) + 4) });
                 }
 
-                Rectangle textRect = new Rectangle(2, 2, Width - 40, Height - 4);
+                Rectangle textRect = new Rectangle(2, 2, Width -4, Height - 4);//new Rectangle(2, 2, Width - 40, Height - 4);
 
                 if (Enabled)
-                    TextRenderer.DrawText(e.Graphics, Text, MetroFonts.ComboBox(metroComboBoxSize, metroComboBoxWeight), textRect, foreColor, TextFormatFlags.Left | TextFormatFlags.VerticalCenter);
+                    TextRenderer.DrawText(e.Graphics, Text, MetroFonts.ComboBox(metroComboBoxSize, metroComboBoxWeight), textRect, foreColor, TextFormatFlags.HorizontalCenter | TextFormatFlags.VerticalCenter);
                 else
-                    ControlPaint.DrawStringDisabled(e.Graphics, Text, MetroFonts.ComboBox(metroComboBoxSize, metroComboBoxWeight), MetroPaint.ForeColor.ComboBox.Disabled(Theme), textRect, TextFormatFlags.Left | TextFormatFlags.VerticalCenter);
+                    ControlPaint.DrawStringDisabled(e.Graphics, Text, MetroFonts.ComboBox(metroComboBoxSize, metroComboBoxWeight), MetroPaint.ForeColor.ComboBox.Disabled(Theme), textRect, TextFormatFlags.HorizontalCenter | TextFormatFlags.VerticalCenter);
 
                 OnCustomPaintForeground(new MetroPaintEventArgs(Color.Empty, foreColor, e.Graphics));
                 if (displayFocusRectangle && isFocused)
@@ -542,12 +542,12 @@ namespace MetroFramework.Controls
                 if (this.DropDownStyle != ComboBoxStyle.DropDown)
                 {
                     Rectangle textRect = new Rectangle(0, e.Bounds.Top, e.Bounds.Width, e.Bounds.Height);
-                    TextRenderer.DrawText(e.Graphics, GetItemText(Items[e.Index]), MetroFonts.ComboBox(metroComboBoxSize, metroComboBoxWeight), textRect, foreColor, TextFormatFlags.Left | TextFormatFlags.VerticalCenter);
+                    TextRenderer.DrawText(e.Graphics, GetItemText(Items[e.Index]), MetroFonts.ComboBox(metroComboBoxSize, metroComboBoxWeight), textRect, foreColor, TextFormatFlags.HorizontalCenter | TextFormatFlags.VerticalCenter);
                 }
                 else
                 {
                     Rectangle textRect = new Rectangle(0, e.Bounds.Top, this.textBox.Width, e.Bounds.Height);
-                    TextRenderer.DrawText(e.Graphics, GetItemText(Items[e.Index]), MetroFonts.ComboBox(metroComboBoxSize, metroComboBoxWeight), textRect, foreColor, TextFormatFlags.Left | TextFormatFlags.VerticalCenter);
+                    TextRenderer.DrawText(e.Graphics, GetItemText(Items[e.Index]), MetroFonts.ComboBox(metroComboBoxSize, metroComboBoxWeight), textRect, foreColor, TextFormatFlags.HorizontalCenter | TextFormatFlags.VerticalCenter);
                 }
             }
             else
@@ -574,7 +574,7 @@ namespace MetroFramework.Controls
                 backColor = MetroPaint.BackColor.Form(Theme);
             }
                 Rectangle textRect = new Rectangle(2, 2, Width - 20, Height - 4);
-                TextRenderer.DrawText(g, promptText, MetroFonts.ComboBox(metroComboBoxSize, metroComboBoxWeight), textRect, SystemColors.GrayText, backColor, TextFormatFlags.Left | TextFormatFlags.VerticalCenter | TextFormatFlags.EndEllipsis);
+                TextRenderer.DrawText(g, promptText, MetroFonts.ComboBox(metroComboBoxSize, metroComboBoxWeight), textRect, SystemColors.GrayText, backColor, TextFormatFlags.HorizontalCenter | TextFormatFlags.VerticalCenter | TextFormatFlags.EndEllipsis);
         }
 
         #endregion
@@ -711,7 +711,7 @@ namespace MetroFramework.Controls
             {
                 string measureText = Text.Length > 0 ? Text : "MeasureText";
                 proposedSize = new Size(int.MaxValue, int.MaxValue);
-                preferredSize = TextRenderer.MeasureText(g, measureText, MetroFonts.ComboBox(metroComboBoxSize, metroComboBoxWeight), proposedSize, TextFormatFlags.Left | TextFormatFlags.LeftAndRightPadding | TextFormatFlags.VerticalCenter);
+                preferredSize = TextRenderer.MeasureText(g, measureText, MetroFonts.ComboBox(metroComboBoxSize, metroComboBoxWeight), proposedSize, TextFormatFlags.HorizontalCenter | TextFormatFlags.LeftAndRightPadding | TextFormatFlags.VerticalCenter);
                 preferredSize.Height += 4;
             }
 

@@ -365,13 +365,15 @@ namespace MetroFramework.Forms
 
                 using (Pen pen = new Pen(c))
                 {
-                    e.Graphics.DrawLines(pen, new[]
-                        {
-                            new Point(0, borderWidth),
-                            new Point(0, Height - 1),
-                            new Point(Width - 1, Height - 1),
-                            new Point(Width - 1, borderWidth)
-                        });
+                    //e.Graphics.DrawLines(pen, new[]
+                    //    {
+                    //        new Point(0, borderWidth),
+                    //        new Point(0, Height - 1),
+                    //        new Point(Width - 1, Height - 1),
+                    //        new Point(Width - 1, borderWidth)
+                    //    });
+                    e.Graphics.DrawRectangle(pen, 0, 0, Width -1, Height-1);
+
                 }
             }
 
