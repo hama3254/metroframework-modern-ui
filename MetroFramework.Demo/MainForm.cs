@@ -2,7 +2,6 @@
 using System.Drawing;
 using System.Globalization;
 using System.Windows.Forms;
-
 using MetroFramework.Forms;
 using System.Data;
 
@@ -44,7 +43,7 @@ namespace MetroFramework.Demo
         private void metroButton1_Click(object sender, EventArgs e)
         {
             MetroTaskWindow.ShowTaskWindow(this,"SubControl in TaskWindow", new TaskWindowControl(), 10);
-        }
+                 }
 
         private void metroButton2_Click(object sender, EventArgs e)
         {

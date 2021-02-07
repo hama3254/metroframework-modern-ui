@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panelbody = new System.Windows.Forms.Panel();
             this.tlpBody = new System.Windows.Forms.TableLayoutPanel();
             this.messageLabel = new System.Windows.Forms.Label();
@@ -36,9 +37,11 @@
             this.metroButton2 = new MetroFramework.Controls.MetroButton();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.metroButton3 = new MetroFramework.Controls.MetroButton();
+            this.metroStyleManager1 = new MetroFramework.Components.MetroStyleManager(this.components);
             this.panelbody.SuspendLayout();
             this.tlpBody.SuspendLayout();
             this.pnlBottom.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelbody
@@ -54,6 +57,7 @@
             // 
             // tlpBody
             // 
+            this.tlpBody.BackColor = System.Drawing.Color.Transparent;
             this.tlpBody.ColumnCount = 3;
             this.tlpBody.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tlpBody.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
@@ -79,10 +83,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.messageLabel.BackColor = System.Drawing.Color.Transparent;
             this.messageLabel.ForeColor = System.Drawing.Color.White;
-            this.messageLabel.Location = new System.Drawing.Point(83, 37);
+            this.messageLabel.Location = new System.Drawing.Point(83, 30);
             this.messageLabel.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.messageLabel.Name = "messageLabel";
-            this.messageLabel.Size = new System.Drawing.Size(640, 134);
+            this.messageLabel.Size = new System.Drawing.Size(640, 141);
             this.messageLabel.TabIndex = 0;
             this.messageLabel.Text = "message here";
             // 
@@ -95,7 +99,7 @@
             this.titleLabel.Location = new System.Drawing.Point(80, 5);
             this.titleLabel.Margin = new System.Windows.Forms.Padding(0);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(159, 32);
+            this.titleLabel.Size = new System.Drawing.Size(125, 25);
             this.titleLabel.TabIndex = 1;
             this.titleLabel.Text = "message title";
             // 
@@ -126,7 +130,7 @@
             // metroButton1
             // 
             this.metroButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroButton1.BackColor = System.Drawing.Color.ForestGreen;
+            this.metroButton1.BackColor = System.Drawing.Color.Transparent;
             this.metroButton1.FontWeight = MetroFramework.MetroButtonWeight.Regular;
             this.metroButton1.Location = new System.Drawing.Point(357, 1);
             this.metroButton1.Name = "metroButton1";
@@ -134,7 +138,6 @@
             this.metroButton1.TabIndex = 3;
             this.metroButton1.Text = "button 1";
             this.metroButton1.UseSelectable = true;
-            this.metroButton1.UseVisualStyleBackColor = false;
             // 
             // metroButton3
             // 
@@ -147,9 +150,13 @@
             this.metroButton3.Text = "button 3";
             this.metroButton3.UseSelectable = true;
             // 
+            // metroStyleManager1
+            // 
+            this.metroStyleManager1.Owner = this;
+            // 
             // MetroMessageBoxControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 28F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(804, 211);
             this.ControlBox = false;
@@ -163,6 +170,7 @@
             this.tlpBody.ResumeLayout(false);
             this.tlpBody.PerformLayout();
             this.pnlBottom.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -177,5 +185,6 @@
         private Controls.MetroButton metroButton3;
         private System.Windows.Forms.TableLayoutPanel tlpBody;
         private System.Windows.Forms.Panel pnlBottom;
+        private Components.MetroStyleManager metroStyleManager1;
     }
 }

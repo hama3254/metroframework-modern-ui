@@ -296,5 +296,6 @@ namespace MetroFramework
             Hide(); 
         }
 
+       
     }
 }

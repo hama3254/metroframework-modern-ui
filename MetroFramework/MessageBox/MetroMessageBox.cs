@@ -92,7 +92,7 @@ namespace MetroFramework
         /// <param name="height" optional=211></param>
         /// <returns></returns>
         public static DialogResult Show(IWin32Window owner, String message, String title, MessageBoxButtons buttons, MessageBoxIcon icon)
-        { return Show(owner, message, title, buttons, icon, MessageBoxDefaultButton.Button1, 211); }
+        { return Show(owner, message, title, buttons, icon, MessageBoxDefaultButton.Button1, 211,MetroThemeStyle.Light); }
 
         /// <summary>
         /// Shows a metro-styles message notification into the specified owner window.
@@ -105,7 +105,7 @@ namespace MetroFramework
         /// <param name="height" optional=211></param>
         /// <returns></returns>
         public static DialogResult Show(IWin32Window owner, String message, String title, MessageBoxButtons buttons, MessageBoxIcon icon, int height)
-        { return Show(owner, message, title, buttons, icon, MessageBoxDefaultButton.Button1, height); }
+        { return Show(owner, message, title, buttons, icon, MessageBoxDefaultButton.Button1, height, MetroThemeStyle.Light); }
 
            /// <summary>
         /// Shows a metro-styles message notification into the specified owner window.
@@ -120,7 +120,7 @@ namespace MetroFramework
         /// <returns></returns>
         public static DialogResult Show(IWin32Window owner, String message, String title, MessageBoxButtons buttons, MessageBoxIcon icon, MessageBoxDefaultButton defaultbutton)
         {
-            return Show(owner, message, title, buttons, icon, defaultbutton, 211);
+            return Show(owner, message, title, buttons, icon, defaultbutton, 211, MetroThemeStyle.Light);
         }
 
         /// <summary>
@@ -134,10 +134,10 @@ namespace MetroFramework
         /// <param name="defaultbutton"></param>
         /// <param name="height" optional=211></param>
         /// <returns></returns>
-        public static DialogResult Show(IWin32Window owner, String message, String title, MessageBoxButtons buttons, MessageBoxIcon icon, MessageBoxDefaultButton defaultbutton, int height)
+        public static DialogResult Show(IWin32Window owner, String message, String title, MessageBoxButtons buttons, MessageBoxIcon icon, MessageBoxDefaultButton defaultbutton, int height, MetroThemeStyle metroTheme)
         {
             DialogResult _result = DialogResult.None;
-
+            
             if (owner != null)
             {
                 Form _owner = (owner as Form == null) ? ((UserControl)owner).ParentForm : (Form)owner;
@@ -170,6 +170,8 @@ namespace MetroFramework
                         SystemSounds.Exclamation.Play(); break;
                     case MessageBoxIcon.Question:
                         SystemSounds.Beep.Play(); break;
+                    case MessageBoxIcon.None:
+                         break;
                     default:
                         SystemSounds.Asterisk.Play(); break;
                 }
@@ -185,6 +187,7 @@ namespace MetroFramework
                 _control.ControlBox = false;
                 _control.ShowInTaskbar = false;
                 _control.TopMost = true;
+                
                 //_owner.Controls.Add(_control);
                 //if (_owner is IMetroForm)
                 //{

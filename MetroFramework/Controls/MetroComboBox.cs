@@ -222,7 +222,7 @@ namespace MetroFramework.Controls
                 if ((value == ComboBoxStyle.DropDown) && (this.Focused))
                     textBox.Visible = true;
                 else
-                    textBox.Visible = false;
+                    textBox.Visible = true;
                 Invalidate();
             }
         }
@@ -620,7 +620,7 @@ namespace MetroFramework.Controls
             isHovered = false;
             isPressed = false;
             if (DropDownStyle == ComboBoxStyle.DropDown)
-                textBox.Visible = false;
+                textBox.Visible = true;
             Invalidate();
 
             base.OnLeave(e);

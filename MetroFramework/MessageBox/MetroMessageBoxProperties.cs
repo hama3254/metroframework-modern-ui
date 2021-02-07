@@ -38,6 +38,12 @@ namespace MetroFramework
         { get; set;  }
 
         /// <summary>
+        /// Gets or sets the message box overlay icon.
+        /// </summary>
+        public MetroThemeStyle ThemeStyle
+        { get; set; }
+
+        /// <summary>
         /// Gets or sets the message box overlay message contents.
         /// </summary>
         public string Message
