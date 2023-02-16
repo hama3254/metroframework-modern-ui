@@ -1,0 +1,8 @@
+
+MetroFramework.Demo/bin/
+MetroFramework.Demo/obj/
+MetroFramework/bin/
+MetroFramework/obj/
+.vs/MetroFramework/FileContentIndex/b4ca1de3-3801-40aa-8c3b-fcb06ba664ae.vsidx
+.vs/MetroFramework/FileContentIndex/read.lock
+.gitignore.bak

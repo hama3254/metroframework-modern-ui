@@ -155,6 +155,7 @@ namespace MetroFramework
     {
         Small,
         Medium,
+        SomethingInBetween,
         Tall
     }
 
@@ -542,6 +543,15 @@ namespace MetroFramework
                     return Default(14f);
                 if (linkWeight == MetroCheckBoxWeight.Bold)
                     return DefaultBold(14f);
+            }//SomethingInBetween
+            else if (linkSize == MetroCheckBoxSize.SomethingInBetween)
+            {
+                if (linkWeight == MetroCheckBoxWeight.Light)
+                    return DefaultLight(16f);
+                if (linkWeight == MetroCheckBoxWeight.Regular)
+                    return Default(16f);
+                if (linkWeight == MetroCheckBoxWeight.Bold)
+                    return DefaultBold(16f);
             }
             else if (linkSize == MetroCheckBoxSize.Tall)
             {

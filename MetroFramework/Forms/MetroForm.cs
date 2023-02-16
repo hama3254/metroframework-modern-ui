@@ -1604,8 +1604,14 @@ namespace MetroFramework.Forms
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MetroForm";
+            this.Load += new System.EventHandler(this.MetroForm_Load);
             this.ResumeLayout(false);
 
+        }
+
+        private void MetroForm_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }
