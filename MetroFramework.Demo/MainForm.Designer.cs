@@ -32,6 +32,7 @@ namespace MetroFramework.Demo
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            MetroFramework.Controls.CheckBoxProperties checkBoxProperties1 = new MetroFramework.Controls.CheckBoxProperties();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
@@ -100,6 +101,7 @@ namespace MetroFramework.Demo
             this.metroToolTip = new MetroFramework.Components.MetroToolTip();
             this.metroStyleExtender = new MetroFramework.Components.MetroStyleExtender(this.components);
             this.metroComboBox2 = new MetroFramework.Controls.MetroComboBox();
+            this.cmbManual = new MetroFramework.Controls.CheckBoxComboBox();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.metroContextMenu1.SuspendLayout();
@@ -124,6 +126,7 @@ namespace MetroFramework.Demo
             // metroTabPage1
             // 
             this.metroTabPage1.AutoScroll = true;
+            this.metroTabPage1.Controls.Add(this.cmbManual);
             this.metroTabPage1.Controls.Add(this.metroDropDownButton1);
             this.metroTabPage1.Controls.Add(this.metroRadioButton4);
             this.metroTabPage1.Controls.Add(this.metroRadioButton5);
@@ -159,6 +162,7 @@ namespace MetroFramework.Demo
             this.metroTabPage1.VerticalScrollbarBarColor = true;
             this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage1.VerticalScrollbarSize = 10;
+            this.metroTabPage1.Click += new System.EventHandler(this.metroTabPage1_Click);
             // 
             // metroDropDownButton1
             // 
@@ -875,6 +879,19 @@ namespace MetroFramework.Demo
             this.metroComboBox2.TabIndex = 1;
             this.metroComboBox2.UseSelectable = true;
             // 
+            // cmbManual
+            // 
+            checkBoxProperties1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.cmbManual.CheckBoxProperties = checkBoxProperties1;
+            this.cmbManual.DisplayMemberSingleItem = "";
+            this.cmbManual.FormattingEnabled = true;
+            this.cmbManual.ItemHeight = 23;
+            this.cmbManual.Location = new System.Drawing.Point(237, 231);
+            this.cmbManual.Name = "cmbManual";
+            this.cmbManual.Size = new System.Drawing.Size(272, 29);
+            this.cmbManual.TabIndex = 25;
+            this.cmbManual.UseSelectable = true;
+            // 
             // MainForm
             // 
             this.ApplyImageInvert = true;
@@ -974,6 +991,7 @@ namespace MetroFramework.Demo
         private Controls.MetroCheckBox metroCheckBox6;
         private Controls.MetroDropDownButton metroDropDownButton1;
         private Controls.MetroComboBox metroComboBox2;
+        private MetroFramework.Controls.CheckBoxComboBox cmbManual;
     }
 }
 

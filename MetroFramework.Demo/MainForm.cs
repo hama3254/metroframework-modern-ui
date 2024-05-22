@@ -98,10 +98,22 @@ namespace MetroFramework.Demo
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-           
+            cmbManual.Items.Add("Item 1");
+            cmbManual.Items.Add("Item 2");
+            cmbManual.Items.Add("Item 3");
+            cmbManual.Items.Add("Item 4");
+            cmbManual.Items.Add("Item 5");
+            cmbManual.Items.Add("Item 6");
+            cmbManual.Items.Add("Item 7");
+            cmbManual.Items.Add("Item 8");
         }
 
         private void metroDropDownButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroTabPage1_Click(object sender, EventArgs e)
         {
 
         }

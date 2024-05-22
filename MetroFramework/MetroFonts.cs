@@ -35,6 +35,7 @@ namespace MetroFramework
     {
         Small,
         Medium,
+        Bigger,
         Tall
     }
 
@@ -113,6 +114,7 @@ namespace MetroFramework
     {
         Small,
         Medium,
+        Bigger,
         Tall
     }
 
@@ -169,7 +171,8 @@ namespace MetroFramework
     {
         Small,
         Medium,
-        Tall
+        Tall,
+        Download
     }
 
     public enum MetroButtonWeight
@@ -411,6 +414,15 @@ namespace MetroFramework
                 if (labelWeight == MetroLabelWeight.Bold)
                     return DefaultBold(14f);
             }
+            else if (labelSize == MetroLabelSize.Bigger)
+            {
+                if (labelWeight == MetroLabelWeight.Light)
+                    return DefaultLight(16f);
+                if (labelWeight == MetroLabelWeight.Regular)
+                    return Default(16f);
+                if (labelWeight == MetroLabelWeight.Bold)
+                    return DefaultBold(16f);
+            }
             else if (labelSize == MetroLabelSize.Tall)
             {
                 if (labelWeight == MetroLabelWeight.Light)
@@ -443,6 +455,15 @@ namespace MetroFramework
                     return Default(14f);
                 if (linkWeight == MetroTextBoxWeight.Bold)
                     return DefaultBold(14f);
+            }
+            else if (linkSize == MetroTextBoxSize.Bigger)
+            {
+                if (linkWeight == MetroTextBoxWeight.Light)
+                    return DefaultLight(16f);
+                if (linkWeight == MetroTextBoxWeight.Regular)
+                    return Default(16f);
+                if (linkWeight == MetroTextBoxWeight.Bold)
+                    return DefaultBold(16f);
             }
             else if (linkSize == MetroTextBoxSize.Tall)
             {
@@ -616,6 +637,15 @@ namespace MetroFramework
                     return DefaultBold(13f);
             }
             else if (linkSize == MetroButtonSize.Tall)
+            {
+                if (linkWeight == MetroButtonWeight.Light)
+                    return DefaultLight(16f);
+                if (linkWeight == MetroButtonWeight.Regular)
+                    return Default(16f);
+                if (linkWeight == MetroButtonWeight.Bold)
+                    return DefaultBold(16f);
+            }
+            else if (linkSize == MetroButtonSize.Download)
             {
                 if (linkWeight == MetroButtonWeight.Light)
                     return DefaultLight(16f);

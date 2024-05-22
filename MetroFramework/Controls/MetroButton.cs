@@ -322,11 +322,11 @@ namespace MetroFramework.Controls
                 }
             }
             
-            using (Pen p = new Pen(borderColor))
-            {
-                Rectangle borderRect = new Rectangle(0, 0, Width - 1, Height - 1);
-                e.Graphics.DrawRectangle(p, borderRect);
-            }
+            //using (Pen p = new Pen(borderColor))
+            //{
+            //    Rectangle borderRect = new Rectangle(0, 0, Width - 1, Height - 1);
+            //    e.Graphics.DrawRectangle(p, borderRect);
+            //}
 
             if (Highlight && !isHovered && !isPressed && Enabled)
             {

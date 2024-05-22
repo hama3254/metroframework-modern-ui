@@ -1,0 +1,13 @@
+#Folder
+MetroFramework.Demo/bin/
+MetroFramework.Demo/obj/
+MetroFramework/bin/
+MetroFramework/obj/
+.vs/
+
+#Files
+*.zip
+*.mp4
+*.log
+*.key
+*.bak
